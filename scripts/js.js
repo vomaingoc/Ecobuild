@@ -46,6 +46,7 @@ $(function () {
 	if (w1 > 768){
 		$( ".navx>ul>li>ul" ).addClass("wow fadeInUp");
 	$( ".navx ul ul ul" ).addClass("wow fadeInUp");
+	$( ".navx-intro li li" ).append("<i class='fa fa-circle'></i>");
 	}
      
 	$( ".navx>ul>li" ).has( "ul" ).addClass("parent");
@@ -90,7 +91,7 @@ $(function () {
 
 //slider nivo 2
  $(window).load(function() {
-	$('#slider2').nivoSlider({	
+	$('#slider-intro').nivoSlider({	
 	 controlNavThumbs: true,
         pauseOnHover: true,
 		controlNav: true,
