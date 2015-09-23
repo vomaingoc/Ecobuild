@@ -51,8 +51,8 @@ $(function () {
      
 	$( ".navx>ul>li" ).has( "ul" ).addClass("parent");
 	
-	$( ".list-media article" ).addClass("wow fadeInUp");
-	 $( ".pagination a, .pagination b" ).addClass("wow rotateInUpLeft");
+	//$( ".media" ).addClass("wow fadeInUp");
+	 //$( ".pagination a, .pagination b" ).addClass("wow rotateInUpLeft");
   
 	  $(".search-icon").on('click', function (e) {
         e.preventDefault();
