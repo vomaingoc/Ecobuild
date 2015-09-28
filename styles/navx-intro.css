@@ -74,12 +74,12 @@
 	font-size: 1em;
 	line-height: 38px;
 	padding-bottom: 15px;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
 	font-weight: 700;
 }
-.navx>ul>li:hover>a, .navx>ul>li.active>a, .navx>ul>li:focus>a {
-	color: #fff
+.navx>ul>li:hover>a ,.navx>ul>li:focus>a {
+	color: #EE522A
 }
 .navx > ul > li > ul {
 	top: 100%;
