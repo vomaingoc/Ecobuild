@@ -7,7 +7,10 @@
 <script type="text/javascript" src="scripts/jquery.min.1.11.2.js"></script>
 </head>
 <body>
-
+<div class=" container page">
+<div class="bor1">
+<div class="bor2 intro-page">
+<div class="testDiv"> 
 <!---================HEADER===================-->
 <header class="header" role="banner">
   <div class="container"> <span class="brand"><a href="index.html"><img src="data/logo.png" /></a></span>
@@ -15,18 +18,17 @@
       <ul>
         <li class="active"><a href="index.html">Trang chủ</a> </li>
         <li><a href="detailnews.html">Giới thiệu</a> </li>
-        <li><a href="news.html">Tài liệu</a>
-        <li><a href="news.html">Tin tức</a> <ul>
-              <li><a href="#">Nullam quis risus</a>
-                <ul>
-                  <li><a href="#">Nullam quis risus</a> </li>
-                  <li><a href="#">Nullam quis risus</a> </li>
-                  <li><a href="#">Nullam quis risus</a> </li>
-                </ul>
-              </li>
-              <li><a href="#">Nullam quis risus</a> </li>
-              <li><a href="#">Nullam quis risus</a> </li>
-            </ul></li>
+        <li><a href="news.html">Tài liệu</a></li>
+        <li><a href="news.html">Tin tức</a></li>
+        <li><a href="#">Nullam quis risus</a>
+          <ul>
+            <li><a href="#">Nullam quis risus</a> </li>
+            <li><a href="#">Nullam quis risus</a> </li>
+            <li><a href="#">Nullam quis risus</a> </li>
+          </ul>
+        </li>
+        <li><a href="#">Nullam quis risus</a> </li>
+        <li><a href="#">Nullam quis risus</a> </li>
         <li><a href="contact.html">Liên Hệ</a> </li>
       </ul>
     </div>
@@ -41,12 +43,7 @@
   <div class="theme-default slider-wrapper-detail">
     <div id="slider-intro" class="nivoSlider"> 
       <!--begin--> 
-      <a href="#"><img src="data/slide1.jpg" data-thumb="data/slide1.jpg"  /></a> 
-      <a href="#"><img src="data/slide2.jpg"  data-thumb="data/slide2.jpg"/></a> 
-      <a href="#"><img src="data/slide1.jpg" data-thumb="data/slide3.jpg"  /></a>
-       <a href="#"><img src="data/slide1.jpg" data-thumb="data/slide1.jpg"  /></a> 
-      <a href="#"><img src="data/slide2.jpg"  data-thumb="data/slide2.jpg"/></a> 
-      <a href="#"><img src="data/slide1.jpg" data-thumb="data/slide3.jpg"  /></a>
+      <a href="#"><img src="data/slide1.jpg" data-thumb="data/slide1.jpg"  /></a> <a href="#"><img src="data/slide2.jpg"  data-thumb="data/slide2.jpg"/></a> <a href="#"><img src="data/slide1.jpg" data-thumb="data/slide3.jpg"  /></a> <a href="#"><img src="data/slide1.jpg" data-thumb="data/slide1.jpg"  /></a> <a href="#"><img src="data/slide2.jpg"  data-thumb="data/slide2.jpg"/></a> <a href="#"><img src="data/slide1.jpg" data-thumb="data/slide3.jpg"  /></a> 
       <!--end --> 
     </div>
   </div>
@@ -55,24 +52,23 @@
 <!---================FOOTER===================-->
 <footer class="footer" role="contentinfo">
   <div class="container">
-     <div class="col3">
-     <i class="fa fa-envelope-o"></i> <b>Email của chúng tôi</b>
-     
-     </div>
-     
-     <div class="col3">
-     14 nguyen thi hien, Bien Hoa, Dong Nai
-     </div>
-     
-     <div class="col3">
-     T: +84 4444 777 448<br />
-     F: +84 4444 777 448<br />
-     E: info@ecobuild.com.vn
-     
-     </div>
-     <div class="social">  <a class="facebook"><i class="fa fa-facebook"></i></a> <a class="google-plus"><i class="fa fa-google-plus"></i></a> <a class="twitter"><i class="fa fa-twitter"></i></a></div>
+    <div class="col3"> <i class="fa fa-envelope-o"></i> <b>Email của chúng tôi</b> </div>
+    <div class="col3"> 14 nguyen thi hien, Bien Hoa, Dong Nai </div>
+    <div class="col3"> T: +84 4444 777 448<br />
+      F: +84 4444 777 448<br />
+      E: info@ecobuild.com.vn </div>
+    <div class="social"> <a class="facebook"><i class="fa fa-facebook"></i></a> <a class="google-plus"><i class="fa fa-google-plus"></i></a> <a class="twitter"><i class="fa fa-twitter"></i></a></div>
   </div>
 </footer>
+</div>
+
+</div>
+
+<figure class="brand-ft"><a href="intro.html"><img src="data/logo.png" /></a></figure>
+    <p class="copyright">All rights reserved by Truong Phu Steel ABN 25051975</p>
+    <p class="menu-home"> <a class="link-home"><i class="fa fa-square-o"> </i></a> </p>
+</div>
+</div>
 <!---===============javascript==================--> 
 <script type="text/javascript" src="scripts/bxslider.js"></script> 
 <script type="text/javascript" src="scripts/js.js"></script> 
@@ -83,6 +79,15 @@ new WOW().init();
 </script> 
 <script>
 $().UItoTop({});
+</script>
+<script type="text/javascript" src="Scripts/jquery.slimscroll.js"></script> 
+<script type="text/javascript">
+$(function(){
+  $('.testDiv').slimScroll({
+	  alwaysVisible: true
+  });
+
+});
 </script>
 </body>
 </html>

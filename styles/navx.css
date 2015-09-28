@@ -160,3 +160,14 @@
 	width: 20%;
 	margin: 20px;
 }
+@media (max-width:768px) {
+	.navx-it .img-li img {
+	max-height: 75px
+}
+.navx-it .img-li {
+	height: 75px;
+}
+.navx-it .img-li:hover img {
+	max-height: 90px
+}
+}
