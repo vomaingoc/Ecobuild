@@ -57,31 +57,45 @@ $(function () {
 	  $(".search-icon").on('click', function (e) {
         e.preventDefault();
         $(".search-h").slideToggle();
- 
- 
-    });
- 
-	
-	
+    });	
 });
 
 $(function () {
 	 
-	$( ".navy >ul > li" ).append("<i class='fa fa-caret-right'></i>");
-	
- 
-        var w = $(window).width();
-        if (w < 768) {
+	$( ".navy >ul > li" ).append("<i class='fa fa-caret-right'></i>"); 
+	var w = $(window).width();
+		if (w < 768) {
 			$( ".navy .tt-side" ).append("<i class='fa fa-plus-square-o'></i>");
-        }
- 		 arrowplus = $('.navy .tt-side i.fa');
+		}
+		 arrowplus = $('.navy .tt-side i.fa');
 		 $(arrowplus).on('click', function (e) {
-         
-        $( ".navy  ul" ).slideToggle();
-    });
+		 
+		$( ".navy  ul" ).slideToggle();
+	});
+	//sub menu here 
+	$( ".navx-it>ul > li >ul" ).append("<i class='fa fa-close'></i>"); 
+ 	$( ".navx-it>ul>li" ).has("ul").addClass("parentli");
+ $(".parentli>a").removeAttr("href");
+	
+	$( ".navx-it>ul>li>a>i" ).click(function() {
+		$( ".navx-it>ul>li>ul").fadeOut("fast");
+		$( this ).parent("a").parent("li").children("ul").toggle();
+		//.delay(4000).fadeOut(2000);
+		////$( this ).children("ul").delay(9000);
+//		$( this ).children("ul").fadeOut(9000);
+	});
+	
+	$( ".navx-it>ul>li>ul").children("i.fa").click(function() {
+		$( this ).parent("ul").fadeOut();
+	});
+	
+	
+	$( ".navx-it ul" ).click(function() {
+		$( this ).children("ul").slideUp();
+	 });
+	 //end sub menu here
+	 
 });
- 
- 
 
 
 //slider nivo
@@ -89,73 +103,29 @@ $(function () {
 	$('#slider').nivoSlider();
 });
 
-//slider nivo 2
- $(window).load(function() {
-	$('#slider-intro').nivoSlider({	
-	 controlNavThumbs: true,
-        pauseOnHover: true,
-		controlNav: true,
-	});
-});
- 
- //back top
-  (function($){
-	$.fn.UItoTop = function(options) {
-
- 		var defaults = {
-			text: '',
-			min: 500,			
-			scrollSpeed: 800,
-  			containerID: 'back-top',
-  			containerClass: 'fa fa-chevron-up',
-			easingType: 'linear'
-					
- 		};
-
- 		var settings = $.extend(defaults, options);
-		var containerIDhash = '#' + settings.containerID;
-		var containerHoverIDHash = '#'+settings.containerHoverID;
-			
-		$('body').append(' <a href="#" id="'+settings.containerID+'" class="'+settings.containerClass+'" >'+settings.text+'</a> ');		
-		
-		$(containerIDhash).hide().click(function(){			
-			$('html, body').stop().animate({scrollTop:0}, settings.scrollSpeed, settings.easingType);
-			$('#'+settings.containerHoverID, this).stop().animate({'opacity': 0 }, settings.inDelay, settings.easingType);
-			return false;
-		})
-		
-								
-		$(window).scroll(function() {
-			var sd = $(window).scrollTop();
-			if(typeof document.body.style.maxHeight === "undefined") {
-				$(containerIDhash).css({
-					'position': 'absolute',
-					'top': $(window).scrollTop() + $(window).height() - 50
-				});
-			}
-			if ( sd > settings.min ) 
-				$(containerIDhash).stop(true,true).fadeIn(600);
-			else 
-				$(containerIDhash).fadeOut(600);
-		});
-};
-})(jQuery);
-
+////slider nivo 2
+// $(window).load(function() {
+//	$('#slider-intro').nivoSlider({	
+//	 controlNavThumbs: true,
+//        pauseOnHover: true,
+//		controlNav: true,
+//	});
+//});
  
 //popup search
  
- var notH = 1,
-$pop = $('.popupSearch').hover(function () { notH ^= 1; });
-
-  $(document).on('mouseup keyup', function (e) {
-	  if (notH || e.which == 27) $pop.stop().hide();
-  });
-  $('.popupSearch').hide();
-$(document).ready(function () {
-  $('.trigger').click(function () {
-	  $('.popupSearch').slideToggle();  
-  });
-  $('.btn-close').click(function () {
-	  $('.popupSearch').slideUp('fast');
-  });
-}); 
+// var notH = 1,
+//$pop = $('.popupSearch').hover(function () { notH ^= 1; });
+//
+//  $(document).on('mouseup keyup', function (e) {
+//	  if (notH || e.which == 27) $pop.stop().hide();
+//  });
+//  $('.popupSearch').hide();
+//$(document).ready(function () {
+//  $('.trigger').click(function () {
+//	  $('.popupSearch').slideToggle();  
+//  });
+//  $('.btn-close').click(function () {
+//	  $('.popupSearch').slideUp('fast');
+//  });
+//}); 

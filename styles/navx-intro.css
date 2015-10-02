@@ -131,7 +131,7 @@
 	bottom: 0;
 	right: 10px;
 	width: 100%;
-	text-align: right
+	text-align: right;
 }
 .navx>ul>li:last-child {
 	border-right: 0;
@@ -156,7 +156,8 @@
 	position: absolute;
 	bottom: 5px;
 	width: 100%;
-	text-align: right
+	text-align: right;
+	 left:10px
 }
 .navx ul {
 	z-index: 9999999999999
@@ -259,3 +260,4 @@
 	padding-bottom: 10px
 }
 }
+

@@ -1,13 +1,15 @@
 ﻿/*Nav Desktop*/
-.menu{ position:absolute; bottom:0} 
+.menu {
+	position: absolute;
+	bottom: 0
+}
 .navx {
 	clear: both;
 	z-index: 99;
 	position: relative;
 	display: block;
 	display: inline-block;
-	bottom:0;
-	
+	bottom: 0;
 }
 .navx >ul {
 	width: 100%;
@@ -35,7 +37,6 @@
 	content: " ";
 	display: table;
 }
- 
 .navx {
 	padding-left: 35px;
 	padding-right: 35px;
@@ -93,7 +94,7 @@
 .navx>ul>li>a span {
 	display: none
 }
-@media (max-width:768px) {
+@media (max-width:960px) {
 .navx>ul>li:nth-child(n+7) {
 	display: none
 }
@@ -109,8 +110,30 @@
 	max-height: 65px
 }
 }
+@media (max-width:768px) {
+	
+.navx>ul>li:nth-child(n+6) {
+	display: none
+}
+.navx>ul>li {
+	width: 80px;
+	top: -40px;
+	height: 40px;
+}
+.img-li img {
+	max-height: 60px;
+}
+.navx>ul>li:hover .img-li img {
+	max-height: 65px
+}
+}
+@media (max-width:750px){
+	.navx>ul>li:nth-child(n+5) {
+	display: none
+}
+}
 @media (max-width:480px) {
-.navx>ul>li:nth-child(n+5) {
+.navx>ul>li:nth-child(n+4) {
 	display: none
 }
 .navx>ul>li {
@@ -125,9 +148,14 @@
 	max-height: 35px
 }
 }
+ @media (max-width:320px) {
+.navx>ul>li:nth-child(n+4) {
+	display: none
+}
+}
 /*nav item*/
 .navx-it {
-	padding: 5%
+	padding: 4%; width:100%; display:inline-block
 }
 .navx-it ul {
 	list-style: none;
@@ -137,7 +165,7 @@
 .navx-it .img-li img {
 	max-height: 95px
 }
-.navx-it .img-li {
+.navx-it>ul>li>a> .img-li {
 	height: 95px;
 }
 .navx-it .img-li:hover img {
@@ -146,28 +174,98 @@
 .navx-it a span {
 	clear: both;
 	width: 100%;
-	margin-top: 15px;
+	/*margin-top: 15px;*/
 	display: inline-block;
-	color: #fff;
-	text-shadow: 0 1px 6px #000000;
-	font-weight: bold;
-	font-family: Tahoma, Geneva, sans-serif;
-	letter-spacing: 1px;
+	color: #000;
+	text-shadow: 1px 1px 1px #fff;
+	font-size: 1.1em;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden
 }
-.navx-it li {
+.navx-it >ul> li {
 	position: relative;
-	display: inline-block;
-	width: 20%;
-	margin: 20px;
+	display: block;
+	float:left;
+	width: 25%;
+	padding: 20px;
 }
-@media (max-width:768px) {
-	.navx-it .img-li img {
-	max-height: 75px
+.navx-it >ul> li >a {
+	display: inline-block;
+	text-align: center;
+	width: 100%
+}
+.navx-it ul ul {
+	position: absolute;
+	z-index: 1000;
+	background: rgba(0,0,0,0.8);
+	top: 0;
+	left: 0;
+	padding: 10px 5px;
+	min-width: 212px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	border: solid 1px #ccc;
+	display: none
+}
+.navx-it ul ul li {
+	width: 50%;
+	height: 50%;
+	float: left
+}
+.navx-it ul ul li img {
+	max-width: 50px;
+}
+.navx-it ul ul a span {
+	color: #fff;
+	text-shadow: 1px 1px 1px #000;
+	margin-top: 0;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden; font-size:0.9em;
+	padding:0px 7px;
+}
+.navx-it ul ul i.fa {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	color: #fff;
+	font-size: 1.2em;
+	width: 15px;
+	height: 15px;
+}
+ @media (max-width:768px) {
+	 .container.page{ padding-top:1%; padding-bottom:1%}
+	 .navx-it >ul> li{ float:left; display:block; width:33.33%; padding:10px}
+	 .navx-it a span{ font-size:0.9em !important}
+	 .navx-it{ padding:2%}
+.navx-it .img-li img {
+	max-height: 70px;
+	height:auto;
+	min-height:auto
 }
 .navx-it .img-li {
-	height: 75px;
+	height:auto;
+	min-height:auto
 }
+.navx-it>ul>li>a> .img-li{height:auto;}
+
 .navx-it .img-li:hover img {
-	max-height: 90px
+	max-height: 70px;
+ 
 }
+.navx-it a {
+	font-weight: normal;
+	letter-spacing: 0;
+	font-size: 0.9em
+}
+}
+.displaynone {
+	display: none
+}
+@media (max-width:480px) {
+	.navx-it >ul> li{ float:left; display:block; width:50%; padding:10px}
+	.navx-it ul ul{min-width: 102px;}
+	.navx-it a span{ font-size:0.9em !important}
+	.navx-it ul li:nth-child(2n) ul{ left:auto; right:0}
 }

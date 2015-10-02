@@ -15,25 +15,7 @@ body {
 .page {
 	padding-top: 5%;
 	padding-bottom: 5%;
-	width:100%;
-}
-.bor1 {
 	width: 100%;
-	border-radius: 5% 5%;
-	background: #fff;
-	padding: 5%;
-	padding-bottom: 90px;
-	position: relative;
-	border: solid 3px #ddd;
-}
-.bor2 {
-	width: 100%;
-	height: 100%;
-	background: #fff;
-	display: inline-block;
-	min-height: 670px;
-	border: solid 2px #ccc;
-	position: relative;
 }
 .home-page {
 	background: url(../images/bg-default.jpg) center center;
@@ -58,12 +40,10 @@ body {
 }
 .home-page .testDiv {
 	height: 525px!important;
- 
 }
 .home-page .slimScrollDiv {
 	height: 525px!important;
-	margin-top:20px
- 
+	margin-top: 20px
 }
 .copyright {
 	position: absolute;
@@ -153,6 +133,7 @@ header, .menu, .slider, .main, footer {
 	font-size: 11px;
 	background: transparent
 }
+.txt{ border: solid 1px #ccc; height:30px; padding:5px 10px; outline:none; min-width:200px}
 .btn-search {
 	background: transparent;
 	border: 0;
@@ -198,7 +179,7 @@ header, .menu, .slider, .main, footer {
 }
 .control-top span {
 	line-height: 40px;
-	font-weight: bold;
+	/*font-family: 'FallingSkyBd';*/
 	font-size: 1.4em;
 	color: #fff
 }
@@ -260,8 +241,7 @@ header, .menu, .slider, .main, footer {
 .detail-link {
 	color: #0F507E;
 	padding-top: 15px;
-	display: inline-block;
-	font-weight: bold
+	display: inline-block;/*font-weight: bold*/
 }
 .detail-link i {
 }
@@ -487,6 +467,18 @@ header, .menu, .slider, .main, footer {
 	margin: 5px 0;
 	padding: 0 10px
 }
+@media (min-width:768px) {
+.form-ct {
+	width: 60%;
+	clear: both;
+	float: none;
+	margin-left: auto;
+	margin-right: auto
+}
+.contact>p:first-child {
+	text-align: center
+}
+}
 .form-ct textarea {
 	padding: 5px 10px;
 	min-height: 100px
@@ -584,12 +576,27 @@ header, .menu, .slider, .main, footer {
 	cursor: default;
 	line-height: 26px;
 	color: #fff;
-	font-weight: bold
 }
 .btn-search:hover, .btn-close:hover {
 	color: #78E055
 }
 /*===============================end tim kiem*/
+
+/*globalcontact*/
+
+.globalcontact{ text-align:center ; padding:3%}
+
+.globalcontact p{ margin:10px; 0}
+.globalcontact b{ width:70px; display:inline-block}
+
+.proposal{padding:3%}
+.proposal p{ margin-top:10px; padding:0 15px}
+.proposal p .txt{ width:100%;}
+.proposal div.col6{ padding:0}
+red{ color:red}
+red.hidden{ display:none;}
+.proposal .txt{ height:35px}
+/*.proposal*/
 
 .tt-dt-project {
 	text-transform: uppercase;
@@ -609,8 +616,9 @@ header, .menu, .slider, .main, footer {
 }
  @media (max-width:767px) {
 .brand-ft img {
-	max-width: 100px
+	max-width: 100%
 }
+.brand-ft{width: 30%;}
 .copyright {
 	font-size: 10px;
 	width: 30%;
@@ -619,11 +627,9 @@ header, .menu, .slider, .main, footer {
 .menu-home {
 	bottom: 1%
 }
-/*.link-home {
- 
-	padding: 12px 14px;}*/
-	
 }
+
+ 
  @media (max-width:767px) {
 .search-icon {
 	display: block
@@ -678,4 +684,5 @@ header, .menu, .slider, .main, footer {
 	text-align: center;
 	margin-top: 0;
 }
+.toolbarBox {float:left; clear:both; padding:10px 5px}
 }

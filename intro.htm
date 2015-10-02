@@ -11,40 +11,23 @@
   <div class="bor1">
     <div class="bor2 intro-page">
       <div class="testDiv"> 
-        <!---================HEADER===================-->
-        <header class="header" role="banner">
-          <div class="container"> <span class="brand"><a href="index.htm"><img src="data/logo.png" /></a></span>
-            <div class="navx navx-intro"> <a href="#" id="pull" class="clearfix"><i class="openIco fa fa-align-justify"></i> <i class="closeIco fa fa-remove"></i></a>
-              <ul>
-                <li class="active"><a href="index.htm">Trang chủ</a> </li>
-                <li><a href="detailnews.htm">Giới thiệu</a> </li>
-                <li><a href="news.htm">Tài liệu</a></li>
-                <li><a href="news.htm">Tin tức</a>
-                  <ul>
-                    <li><a href="#">Nullam quis risus</a> </li>
-                    <li><a href="#">Nullam quis risus</a> <ul>
-                    <li><a href="#">Nullam quis risus</a> </li>
-                    <li><a href="#">Nullam quis risus</a> </li>
-                    <li><a href="#">Nullam quis risus</a> </li>
-                  </ul></li>
-                    <li><a href="#">Nullam quis risus</a> </li>
-                  </ul>
-                </li>
-                <li><a href="contact.htm">Liên Hệ</a> </li>
-              </ul>
-            </div>
-            <div class="search">
-              <input type="text" alt="Tìm kiếm" class="txt-search " placeholder="Từ khóa tìm kiếm…">
-              <a class="btn-search" ><i class="fa fa-search"></i></a> </div>
-          </div>
-        </header>
-        
+        <!---================HEADER===================--> 
+        <script>
+		//slider nivo 2
+		 $(window).load(function() {
+			$('#slider-intro').nivoSlider({	
+			 controlNavThumbs: true,
+				pauseOnHover: true,
+				controlNav: true,
+			});
+		});
+		</script>
         <!---================MAIN MENU===================-->
         <figure class="slider-intro">
           <div class="theme-default slider-wrapper-detail">
             <div id="slider-intro" class="nivoSlider"> 
               <!--begin--> 
-              <a href="#"><img src="data/slide1.jpg" data-thumb="data/slide1.jpg"  /></a> <a href="#"><img src="data/slide2.jpg"  data-thumb="data/slide2.jpg"/></a> <a href="#"><img src="data/slide1.jpg" data-thumb="data/slide3.jpg"  /></a> <a href="#"><img src="data/slide1.jpg" data-thumb="data/slide1.jpg"  /></a> <a href="#"><img src="data/slide2.jpg"  data-thumb="data/slide2.jpg"/></a> <a href="#"><img src="data/slide1.jpg" data-thumb="data/slide3.jpg"  /></a> 
+              <a href="#"><img src="data/slide1.jpg" data-thumb="data/slide1.jpg"  /></a> <a href="#"><img src="data/slide2.jpg"  data-thumb="data/slide2.jpg"/></a> <a href="#"><img src="data/slide1.jpg" data-thumb="data/slide3.jpg"  /></a> 
               <!--end --> 
             </div>
           </div>
@@ -65,7 +48,7 @@
     </div>
     <figure class="brand-ft"><a href="intro.htm"><img src="data/logo.png" /></a></figure>
     <p class="copyright">All rights reserved by Truong Phu Steel ABN 25051975</p>
-    <p class="menu-home"> <a class="link-home"><i class="fa fa-square-o"> </i></a> </p>
+    <p class="menu-home"> <a href="index.htm" class="link-home"><i class="fa fa-square-o"> </i></a> </p>
   </div>
 </div>
 <!---===============javascript==================--> 
